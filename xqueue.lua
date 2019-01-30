@@ -7,7 +7,7 @@ local clock = require 'clock'
 
 local tuple_ctype = ffi.typeof(box.tuple.new())
 
-local monotonic_max_age = 10*365*86400;
+local monotonic_max_age = -10*365*86400;
 
 local function table_clear(t)
 	if type(t) ~= 'table' then
